@@ -1,6 +1,7 @@
 package com.txch.narcotics;
 
 import com.mojang.logging.LogUtils;
+import com.txch.narcotics.block.ModBlocks;
 import com.txch.narcotics.item.ModItems;
 import net.minecraft.client.Minecraft;
 import net.minecraft.core.registries.Registries;
@@ -41,6 +42,7 @@ public class Narcotics
             .icon(() -> ModItems.BAGGIE.get().getDefaultInstance())
             .displayItems((parameters, output) -> {
                 output.accept(ModItems.BAGGIE.get());
+                output.accept(ModItems.COCA_SEEDS.get());
             }).build());
 
     public Narcotics()
@@ -51,6 +53,7 @@ public class Narcotics
 
         // Register
         ModItems.register(modEventBus);
+        ModBlocks.register(modEventBus);
 
         CREATIVE_MODE_TABS.register(modEventBus);
 
