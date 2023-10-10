@@ -1,0 +1,10 @@
+{
+  "homepage": "<homepage/download page for your mod>",
+  "1.20.0": {
+    "1.0.0": "Adding Coca production (basic)."
+  },
+  "promos": {
+    "1.20.0-latest": "1.20.0-1.0.0",
+    "1.20.0-recommended": "1.20.0-1.0.0"
+  }
+}
