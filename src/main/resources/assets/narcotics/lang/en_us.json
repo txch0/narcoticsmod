@@ -3,5 +3,7 @@
   "item.narcotics.coca_seeds": "Coca Seeds",
   "item.narcotics.coca_leaf": "Coca Leaf",
 
-  "creativetab.narcotics_tab": "Narcotics"
+  "creativetab.narcotics_tab": "Narcotics",
+
+  "entity.minecraft.villager.narcotics.dealer_prof": "Drug Dealer"
 }

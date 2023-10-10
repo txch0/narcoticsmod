@@ -23,6 +23,7 @@ public class ModBlockStateProvider extends BlockStateProvider {
     @Override
     protected void registerStatesAndModels() {
         makeCocaCrop((CropBlock)ModBlocks.COCA_CROP.get(), "coca_crop", "coca_crop");
+        blockWithItem(ModBlocks.FILLER);
     }
 
     public void makeCocaCrop(CropBlock block, String modelName, String textureName) {

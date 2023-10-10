@@ -23,6 +23,9 @@ public class ModBlocks {
     public static final RegistryObject<Block> COCA_CROP = BLOCKS.register("coca_crop",
             () -> new CocaCropBlock(BlockBehaviour.Properties.copy(Blocks.WHEAT).noOcclusion().noCollission()));
 
+    public static final RegistryObject<Block> FILLER = registerBlock("filler",
+            () -> new Block(BlockBehaviour.Properties.copy(Blocks.IRON_BLOCK)));
+
     private static <T extends Block> RegistryObject<T> registerBlock(String name, Supplier<T> block) {
         RegistryObject<T> toReturn = BLOCKS.register(name, block);
         registerBlockItem(name, toReturn);

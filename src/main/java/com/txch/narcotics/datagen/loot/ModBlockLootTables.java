@@ -34,6 +34,7 @@ public class ModBlockLootTables extends BlockLootSubProvider {
                 .hasBlockStateProperties(ModBlocks.COCA_CROP.get())
                 .setProperties(StatePropertiesPredicate.Builder.properties().hasProperty(CocaCropBlock.AGE, 5));
         this.add(ModBlocks.COCA_CROP.get(), createCropDrops(ModBlocks.COCA_CROP.get(), ModItems.COCA_LEAF.get(), ModItems.COCA_SEEDS.get(), coca_lootitemconditionbuilder));
+        this.dropSelf(ModBlocks.FILLER.get());
     }
 
     @Override

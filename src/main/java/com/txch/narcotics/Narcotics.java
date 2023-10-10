@@ -3,6 +3,7 @@ package com.txch.narcotics;
 import com.mojang.logging.LogUtils;
 import com.txch.narcotics.block.ModBlocks;
 import com.txch.narcotics.item.ModItems;
+import com.txch.narcotics.villager.ModVillagers;
 import net.minecraft.client.Minecraft;
 import net.minecraft.core.registries.Registries;
 import net.minecraft.network.chat.Component;
@@ -57,6 +58,8 @@ public class Narcotics
         // Register
         ModItems.register(modEventBus);
         ModBlocks.register(modEventBus);
+
+        ModVillagers.register(modEventBus);
 
         CREATIVE_MODE_TABS.register(modEventBus);
 
