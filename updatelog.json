@@ -1,7 +1,7 @@
 {
   "homepage": "<homepage/download page for your mod>",
   "1.20.0": {
-    "1.0.0": "Adding Coca production (basic)."
+    "1.0.0": "Adding Coca production and started mod (basic)."
   },
   "promos": {
     "1.20.0-latest": "1.20.0-1.0.0",
