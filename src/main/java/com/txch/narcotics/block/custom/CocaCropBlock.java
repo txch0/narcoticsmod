@@ -22,6 +22,11 @@ public class CocaCropBlock extends CropBlock {
     }
 
     @Override
+    public IntegerProperty getAgeProperty() {
+        return AGE;
+    }
+
+    @Override
     public int getMaxAge() {
         return MAX_AGE;
     }

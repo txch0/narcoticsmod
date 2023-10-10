@@ -1,3 +1,7 @@
 {
-  "item.narcotics.baggie": "Baggie"
+  "item.narcotics.baggie": "Baggie",
+  "item.narcotics.coca_seeds": "Coca Seeds",
+  "item.narcotics.coca_leaf": "Coca Leaf",
+
+  "creativetab.narcotics_tab": "Narcotics"
 }

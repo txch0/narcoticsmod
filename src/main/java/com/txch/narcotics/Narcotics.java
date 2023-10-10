@@ -5,6 +5,7 @@ import com.txch.narcotics.block.ModBlocks;
 import com.txch.narcotics.item.ModItems;
 import net.minecraft.client.Minecraft;
 import net.minecraft.core.registries.Registries;
+import net.minecraft.network.chat.Component;
 import net.minecraft.world.food.FoodProperties;
 import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.item.CreativeModeTab;
@@ -39,10 +40,12 @@ public class Narcotics
 
     public static final DeferredRegister<CreativeModeTab> CREATIVE_MODE_TABS = DeferredRegister.create(Registries.CREATIVE_MODE_TAB, MODID);
     public static final RegistryObject<CreativeModeTab> EXAMPLE_TAB = CREATIVE_MODE_TABS.register("narcotics_tab", () -> CreativeModeTab.builder()
-            .icon(() -> ModItems.BAGGIE.get().getDefaultInstance())
+            .icon(() -> ModItems.COCA_LEAF.get().getDefaultInstance())
+            .title(Component.translatable("creativetab.narcotics_tab"))
             .displayItems((parameters, output) -> {
                 output.accept(ModItems.BAGGIE.get());
                 output.accept(ModItems.COCA_SEEDS.get());
+                output.accept(ModItems.COCA_LEAF.get());
             }).build());
 
     public Narcotics()
